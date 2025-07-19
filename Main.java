@@ -14,9 +14,9 @@ public class Main {
 
     }
     public static void calculateCustoms(int x, int y){
-        double result = x / 100;
+        int result = x / 100;
         int result2 = y * 100;
-        double c = result + result2;
+        int c = result + result2;
         System.out.println("Размер пошлины (в руб.) составит:" + c);
 
 
