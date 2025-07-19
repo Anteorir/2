@@ -5,23 +5,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите цену товара (в руб.):");
-        int x = scanner.nextInt();
+        int price = scanner.nextInt();
 
         System.out.print("Введите вес товара (в кг.):");
-        int y = scanner.nextInt();
+        int weight = scanner.nextInt();
 
-        calculateCustoms(x, y);
+        calculateCustoms(price, weight);
 
     }
-    public static void calculateCustoms(int x, int y){
-        int result = x / 100;
-        int result2 = y * 100;
-        int c = result + result2;
-        System.out.println("Размер пошлины (в руб.) составит:" + c);
-
-
-
-
-
+    public static void calculateCustoms(int price, int weight){
+        int result = price / 100;
+        int result2 = weight * 100;
+        int result3 = result + result2;
+        System.out.println("Размер пошлины (в руб.) составит:" + result3);
     }
 }
