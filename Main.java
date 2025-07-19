@@ -10,13 +10,14 @@ public class Main {
         System.out.print("Введите вес товара (в кг.):");
         int weight = scanner.nextInt();
 
-        calculateCustoms(price, weight);
+        int result = calculateCustoms(price, weight);
 
+        System.out.println("Размер пошлины (в руб.) составит:" + result);
     }
-    public static void calculateCustoms(int price, int weight){
-        int result = price / 100;
-        int result2 = weight * 100;
-        int result3 = result + result2;
-        System.out.println("Размер пошлины (в руб.) составит:" + result3);
+    public static int calculateCustoms(int price, int weight){
+        int division = price / 100;
+        int multiplication = weight * 100;
+
+        return division + multiplication;
     }
 }
