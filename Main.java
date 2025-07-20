@@ -15,9 +15,9 @@ public class Main {
         System.out.println("Размер пошлины (в руб.) составит:" + result);
     }
     public static int calculateCustoms(int price, int weight){
-        int division = price / 100;
-        int multiplication = weight * 100;
+        int price_tax = price / 100;
+        int weight_tax = weight * 100;
 
-        return division + multiplication;
+        return price_tax + weight_tax;
     }
 }
